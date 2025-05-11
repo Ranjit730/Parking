@@ -68,7 +68,7 @@ const Home = () => {
     }
 
     try {
-      const response = await fetch('https://parking-zizn.onrender.com/api/contact', {
+      const response = await fetch('https://parking-tntt.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

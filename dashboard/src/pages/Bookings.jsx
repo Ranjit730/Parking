@@ -9,7 +9,7 @@ function Bookings() {
   useEffect(() => {
     const fetchSlots = async () => {
       try {
-        const response = await fetch('https://parking-zizn.onrender.com/api/parking/slots');
+        const response = await fetch('https://parking-tntt.onrender.com/api/parking/slots');
         if (!response.ok) {
           throw new Error('Failed to fetch parking slots');
         }

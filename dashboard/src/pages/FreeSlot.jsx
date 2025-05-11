@@ -11,7 +11,7 @@ const FreeSlot = () => {
   useEffect(() => {
     const fetchParkingSlots = async () => {
       try {
-        const response = await fetch('https://parking-zizn.onrender.com/api/parking/slots');
+        const response = await fetch('https://parking-tntt.onrender.com/api/parking/slots');
         if (!response.ok) throw new Error('Failed to fetch parking slots');
         const data = await response.json();
         setParkingSlots(data);
@@ -29,7 +29,7 @@ const FreeSlot = () => {
     if (!window.confirm('Are you sure you want to free this slot?')) return;
 
     try {
-      const response = await fetch('https://parking-zizn.onrender.com/api/parking/free', {
+      const response = await fetch('https://parking-tntt.onrender.com/api/parking/free', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ slotId }),

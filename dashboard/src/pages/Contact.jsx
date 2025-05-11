@@ -9,7 +9,7 @@ function Contact() {
   useEffect(() => {
     const fetchContactData = async () => {
       try {
-        const response = await fetch('https://parking-zizn.onrender.com/api/contact');
+        const response = await fetch('https://parking-tntt.onrender.com/api/contact');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

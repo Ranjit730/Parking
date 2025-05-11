@@ -35,7 +35,7 @@ const LoginPage = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('https://parking-zizn.onrender.com/auth/login', { email, password });
+      const res = await axios.post('https://parking-tntt.onrender.com/auth/login', { email, password });
 
       handleSuccess("Login successful");
 
