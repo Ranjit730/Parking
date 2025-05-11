@@ -26,7 +26,7 @@ const AdminLayout = () => (
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
   const email = localStorage.getItem("email");
-  const admins = ['ranjit@gmail.com', 'imrancodingschool@gmail.com']; // Add your admin emails here
+  const admins = ["test@gmail.com","test2@gmail.com"]; // Add your admin emails here
   const isAdmin = admins.includes(email);
 
   return isAdmin ? children : <Navigate to="/login" replace />;
