@@ -1,0 +1,170 @@
+.bookings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+  }
+  
+  /* Large screens (desktop) - Horizontal row layout */
+  @media (min-width: 1024px) {
+    .slots-grid {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px 0;
+      scrollbar-width: thin;
+      scrollbar-color: #2c3e50 #f1f1f1;
+    }
+  
+    .slots-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+  
+    .slots-grid::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+  
+    .slots-grid::-webkit-scrollbar-thumb {
+      background: #2c3e50;
+      border-radius: 10px;
+    }
+  
+    .parking-slot {
+      min-width: 280px;
+      flex: 0 0 auto;
+    }
+  }
+  
+  /* Medium screens (tablet) - Grid layout */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  /* Small screens (mobile) - Stacked layout */
+  @media (max-width: 767px) {
+    .slots-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .parking-slot {
+      width: 100%;
+    }
+  }
+  
+  /* Common styles for all screen sizes */
+  .parking-slot {
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .parking-slot:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .available {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-left: 6px solid #2e7d32;
+  }
+  
+  .occupied {
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+    border-left: 6px solid #c62828;
+  }
+  
+  .slot-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slot-number::before {
+    content: "📍";
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .slot-status {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .available .slot-status {
+    color: #2e7d32;
+  }
+  
+  .occupied .slot-status {
+    color: #c62828;
+  }
+  
+  .vehicle-number {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 12px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .booking-time {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .loading {
+    color: #2c3e50;
+    background-color: #f5f5f5;
+  }
+  
+  .error {
+    color: #c62828;
+    background-color: #ffebee;
+  }
+  
+  /* Animation for loading state */
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  .loading {
+    animation: pulse 1.5s infinite;
+  }
