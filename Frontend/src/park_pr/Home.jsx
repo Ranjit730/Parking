@@ -232,21 +232,21 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faCar}  style ={{Color:" #1a73e8"}}className="feature-icon" />
+                <FontAwesomeIcon icon={faCar} className="feature-icon" />
                 <h3>Real-Time Monitoring</h3>
                 <p>Track parking space availability in real-time with our intuitive dashboard.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faCreditCard} style ={{Color:" #1a73e8"}}className="feature-icon" />
+                <FontAwesomeIcon icon={faCreditCard} className="feature-icon" />
                 <h3>Online Slot Booking</h3>
                 <p>Accept booking online with our secure system.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faMobileScreen} style ={{Color:" #1a73e8"}}className="feature-icon" />
+                <FontAwesomeIcon icon={faMobileScreen} className="feature-icon" />
                 <h3>24 hours, customer support</h3>
                 <p>Users can have assistance with out 24 hour active customer service agents.</p>
               </div>

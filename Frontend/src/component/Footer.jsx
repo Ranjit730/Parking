@@ -42,7 +42,7 @@ function Footer() {
         <h4>Contact Us</h4>
         <p> Plot No. 5, Industrial Area Phase I <br /> Ludhiana, Punjab 141002<br /> India <br /><br />
           <strong>Phone:</strong> +91 86000 01100<br />
-          <strong>Email:</strong> info@parkingpals.com<br />
+          <strong>Email:</strong> info@Drivopark.com<br />
         </p>
       </div>
     </div>

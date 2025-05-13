@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .feature-icon {
     font-size: 36px;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
     margin-bottom: 20px;
   }
   
