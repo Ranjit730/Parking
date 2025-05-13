@@ -132,7 +132,7 @@ const Home = () => {
         <div className="parking-station">
           <div className="station-name">Central Station</div>
           <div className="station-slots">
-            <span className="available">42 Available</span> | 
+            <span className="available">42 Available</span>  
             <span className="occupied">18 Occupied</span>
           </div>
         </div>
@@ -352,19 +352,7 @@ const Home = () => {
               <div key={index} style={{ marginBottom: '30px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }}>
                 <button
                   onClick={() => toggle(index)}
-                  style={{
-                    width: '100%',
-                    textAlign: 'left',
-                    padding: '16px',
-                    background: '#fff',
-                    border: 'none',
-                    cursor: 'pointer',
-                    outline: 'none',
-                    fontWeight: 'bold',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between'
-                  }}>
+                  style={{width: '100%',textAlign: 'left',padding: '16px',background: '#fff',border: 'none',cursor: 'pointer',outline: 'none',fontWeight: 'bold',display: 'flex',alignItems: 'center',justifyContent: 'space-between'}}>
                   <span>{faq.question}</span>
                   <span>{openIndex === index ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}</span>
                 </button>
@@ -422,49 +410,11 @@ const Home = () => {
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="mb-1 p-5">
-                  <input 
-                    type="text" 
-                    className="form-control mb-4 fs-5" 
-                    name="name" 
-                    placeholder="Name *" 
-                    value={formData.name} 
-                    onChange={handleChange} 
-                    required
-                  />
-                  <input 
-                    type="tel" 
-                    className="form-control mb-4 fs-5" 
-                    name="phone" 
-                    placeholder="Phone *" 
-                    value={formData.phone} 
-                    onChange={handleChange} 
-                    required
-                  />
-                  <input 
-                    type="email" 
-                    className="form-control mb-4 fs-5" 
-                    name="email" 
-                    placeholder="E-mail *" 
-                    value={formData.email} 
-                    onChange={handleChange} 
-                    required
-                  />
-                  <textarea 
-                    className="form-control mb-4 fs-5" 
-                    name="message" 
-                    rows={2} 
-                    placeholder="Message *" 
-                    value={formData.message} 
-                    onChange={handleChange} 
-                    required
-                  />
-                  <select 
-                    name="purpose" 
-                    className="form-control mb-4 fs-5" 
-                    value={formData.purpose} 
-                    onChange={handleChange} 
-                    required
-                  >
+                  <input  type="text" className="form-control mb-4 fs-5" name="name" placeholder="Name *" value={formData.name} onChange={handleChange} required/>
+                  <input type="tel" className="form-control mb-4 fs-5" name="phone" placeholder="Phone *" value={formData.phone} onChange={handleChange} required/>
+                  <input  type="email" className="form-control mb-4 fs-5" name="email" placeholder="E-mail *" value={formData.email} onChange={handleChange} required/>
+                  <textarea  className="form-control mb-4 fs-5" name="message" rows={2} placeholder="Message *" value={formData.message} onChange={handleChange} required/>
+                  <select  name="purpose" className="form-control mb-4 fs-5" value={formData.purpose} onChange={handleChange} required>
                     <option value="">Purpose *</option>
                     <option value="general">General Inquiry</option>
                     <option value="support">Customer Support</option>
@@ -476,11 +426,7 @@ const Home = () => {
                     </div>
                   )}
                   
-                  <button 
-                    type="submit" 
-                    className="btn btn-primary bg-gradient text-light d-flex justify-content-center mt-4 mx-auto fs-5"
-                    disabled={isSubmitting}
-                  >
+                  <button  style ={{backgroundColor:"red"}} type="submit" className="btn btn-get-started  text-light d-flex justify-content-center mt-4 mx-auto fs-5"disabled={isSubmitting}>
                     {isSubmitting ? 'Sending...' : 'Submit'}
                   </button>
                 </div>
