@@ -11,6 +11,18 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
 
+
+  const token=localStorage.getItem("token")
+
+
+
+  const handleLogout=()=>{
+    alert("logout sucessfully")
+    localStorage.removeItem("token")
+    window.location.reload()
+
+  }
+
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -143,13 +155,23 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Link 
+             {token ? 
+              
+              <button className='btn btn-primary ms-lg-3' onClick={handleLogout}>Logout</button>
+              :
+
+
+                 <Link 
                 className="btn btn-primary ms-lg-3" 
                 to="/loginPage"
                 onClick={() => setNavbarOpen(false)}
               >
                 Login/Signup
               </Link>
+
+
+             
+            }
             </li>
           </ul>
         </div>

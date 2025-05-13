@@ -35,7 +35,9 @@ function Signup() {
       if (success) {
         handleSucess("User registered successfully");
         localStorage.setItem("token", response.data.token);
+        
         navigate('/loginPage');
+        window.location.reload()
       } else if (error) {
         const details = error?.details?.[0]?.message || "Something went wrong";
         handleError(details);

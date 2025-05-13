@@ -16,6 +16,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
+  const isAuthenticated=localStorage.getItem("token")
+
   return (
    
     <>
@@ -25,9 +27,9 @@ function App() {
         <Route path="/loginPage" element={<LoginPage/>}></Route>
         <Route path='/Signup' element={<Signup/>}></Route>
      
-        <Route path='/Lodhi' element={<Lodhi/>}></Route>
-        <Route path='/Haibowal' element={<Haibowal></Haibowal>}></Route>
-        <Route path='/Durga' element={<Durga/>}></Route>
+        <Route path='/Lodhi' element={isAuthenticated ? <Lodhi/> : <LoginPage/>}></Route>
+        <Route path='/Haibowal' element={isAuthenticated ? <Haibowal/> : <LoginPage/>}></Route>
+        <Route path='/Durga' element={isAuthenticated ? <Durga/>: <LoginPage/>}></Route>
        
         <Route path='/pagenotfound' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>

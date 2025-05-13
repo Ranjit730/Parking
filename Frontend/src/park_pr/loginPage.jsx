@@ -38,12 +38,14 @@ const LoginPage = () => {
       const res = await axios.post('https://parking-tntt.onrender.com/auth/login', { email, password });
 
       handleSuccess("Login successful");
-
+      
       localStorage.setItem("token", res.data.token);
-
+      
       setTimeout(() => {
         navigate('/');
       }, 2000);
+
+       window.location.reload()
 
     } catch (err) {
       handleError(err.response?.data?.message || "Invalid credentials");
