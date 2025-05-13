@@ -14,10 +14,10 @@ function Footer() {
         </a>
         <p>Smart parking management solutions for businesses of all sizes. Streamline your parking operations with our comprehensive system.</p>
         <div className="social-links mt-3">
-        <a href="#" className="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" className="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" className="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" className="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" className="twitter"style ={{backgroundColor:" #1a73e8"}}><i class="bi bi-twitter"></i></a>
+        <a href="#" className="facebook"style ={{backgroundColor:" #1a73e8"}}><i class="bi bi-facebook"></i></a>
+        <a href="#" className="instagram"style ={{backgroundColor:" #1a73e8"}}><i class="bi bi-instagram"></i></a>
+        <a href="#" className="linkedin"style ={{backgroundColor:" #1a73e8"}}><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <div className="col-lg-2 col-6 footer-links">
