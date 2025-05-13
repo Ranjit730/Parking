@@ -55,7 +55,7 @@ const LoginPage = () => {
   };
 
   return (
-    <section id="login-form" className="login-section  ">
+    <section id="login-form"  className="login-section ">
       <div className="container text-center">
         <form onSubmit={handleSubmit} id="Login" class="row">
           <div className="left col-lg-6 col-sm-8 mx-auto">

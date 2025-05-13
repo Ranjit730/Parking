@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /* live parking */
-  .parking-marquee-container {
+    .parking-marquee-container {
     overflow: hidden;
     background: var(--light-color);
     padding: 15px 0;
@@ -202,10 +202,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .available {
+    color: var(--secondary-color);
     font-weight: 600;
   }
   
   .occupied {
+    color: var(--primary-color);
     font-weight: 600;
   }
   

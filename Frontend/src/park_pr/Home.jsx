@@ -124,7 +124,7 @@ const Home = () => {
     <section id="live-stations" className="section-bg">
   <div className="container">
     <div className="section-title text-center mb-4">
-      <h2>Live Parking Status</h2>
+      <h2 style={{borderBottomColor:" #1a73e8"}}>Live Parking Status</h2>
       <p>Real-time updates from our parking stations around the city</p>
     </div>
     <div className="parking-marquee-container">
@@ -211,7 +211,7 @@ const Home = () => {
       <section id="global-coverage" className="py-5">
         <div className="container">
           <div className="section-title text-center mb-4">
-            <h2>Coverage Area</h2>
+            <h2 style={{borderBottomColor:" #1a73e8"}}>Coverage Area</h2>
             <p>Our parking systems are deployed around the whole city</p>
           </div>
           <div className="world-map-container">
@@ -226,34 +226,34 @@ const Home = () => {
       <section id="features" className="features">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Features</h2>
+            <h2 style={{borderBottomColor:" #1a73e8"}}>Features</h2>
             <p>Our comprehensive parking management solution offers everything you need</p>
           </div>
           <div className="row">
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faCar} className="feature-icon" />
+                <FontAwesomeIcon icon={faCar} style={{ color: " #1a73e8" }} className="feature-icon " />
                 <h3>Real-Time Monitoring</h3>
                 <p>Track parking space availability in real-time with our intuitive dashboard.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faCreditCard} className="feature-icon" />
+                <FontAwesomeIcon icon={faCreditCard} style={{ color: " #1a73e8" }}  className="feature-icon" />
                 <h3>Online Slot Booking</h3>
                 <p>Accept booking online with our secure system.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faMobileScreen} className="feature-icon" />
+                <FontAwesomeIcon icon={faMobileScreen}style={{ color: " #1a73e8" }}  className="feature-icon" />
                 <h3>24 hours, customer support</h3>
                 <p>Users can have assistance with out 24 hour active customer service agents.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faChartLine} className="feature-icon" />
+                <FontAwesomeIcon icon={faChartLine}style={{ color: " #1a73e8" }}  className="feature-icon" />
                 <h3>Analytics Dashboard</h3>
                 <p>Gain insights with comprehensive analytics and reporting tools.</p>
               </div>
@@ -266,7 +266,7 @@ const Home = () => {
       <section id="how-it-works" className="how-it-works section-bg">
         <div className="container">
           <div className="section-title text-center">
-            <h2>How It Works</h2>
+            <h2 style={{borderBottomColor:" #1a73e8"}}>How It Works</h2>
             <p>Our simple 3-step process makes parking management effortless</p>
           </div>
           <div className="row justify-content-center">
@@ -299,7 +299,7 @@ const Home = () => {
       <section id="testimonials" className="testimonials">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Testimonials</h2>
+            <h2 style={{borderBottomColor:" #1a73e8"}}>Testimonials</h2>
             <p>What our clients say about us</p>
           </div>
           <div className="row">
@@ -344,7 +344,7 @@ const Home = () => {
       <section id="faq" className="faq">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Frequently Asked Questions</h2>
+            <h2 style={{borderBottomColor:" #1a73e8"}}>Frequently Asked Questions</h2>
             <p>Find answers to common questions about our parking management system</p>
           </div>
           <div className="faq-container" style={{ maxWidth: '1200px', margin: 'auto' }}>
@@ -371,7 +371,7 @@ const Home = () => {
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-title text-center">
-            <h2>Contact Us</h2>
+            <h2 style={{borderBottomColor:" #1a73e8"}}>Contact Us</h2>
             <p>Get in touch with our team to learn more about how ParkingPals can help your business</p>
           </div>
           <div className="row">
