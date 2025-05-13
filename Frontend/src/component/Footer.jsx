@@ -48,7 +48,7 @@ function Footer() {
     </div>
   </div>
   <div className="container mt-4">
-    <div className="copyright"> © Copyright <strong><span>ImrancodingSchool</span></strong>. All Rights Reserved </div>
+    <div className="copyright"> © Copyright <strong><span>DrivoPark</span></strong>. All Rights Reserved </div>
   </div>
 </footer>
 

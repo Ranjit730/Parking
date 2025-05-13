@@ -108,7 +108,7 @@ const Home = () => {
               <h1>Simplify Your Parking Operations</h1>
               <h2>Smart, efficient, and user-friendly parking management system</h2>
               <div className="text-center text-lg-start">
-                <a href="#contact" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="#contact"  style ={{backgroundColor:" #1a73e8"}} className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Get Started</span> <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                 </a>
               </div>
@@ -232,21 +232,21 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faCar} className="feature-icon" />
+                <FontAwesomeIcon icon={faCar}  style ={{Color:" #1a73e8"}}className="feature-icon" />
                 <h3>Real-Time Monitoring</h3>
                 <p>Track parking space availability in real-time with our intuitive dashboard.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faCreditCard} className="feature-icon" />
+                <FontAwesomeIcon icon={faCreditCard} style ={{Color:" #1a73e8"}}className="feature-icon" />
                 <h3>Online Slot Booking</h3>
                 <p>Accept booking online with our secure system.</p>
               </div>
             </div>
             <div className="col-md-6 mb-4">
               <div className="feature-box">
-                <FontAwesomeIcon icon={faMobileScreen} className="feature-icon" />
+                <FontAwesomeIcon icon={faMobileScreen} style ={{Color:" #1a73e8"}}className="feature-icon" />
                 <h3>24 hours, customer support</h3>
                 <p>Users can have assistance with out 24 hour active customer service agents.</p>
               </div>
@@ -272,21 +272,21 @@ const Home = () => {
           <div className="row justify-content-center">
             <div className="col-md-4 mb-4">
               <div className="step-box">
-                <div className="step-number">1</div>
+                <div  style ={{backgroundColor:" #1a73e8"}} className="step-number">1</div>
                 <h3>Register Your Facility</h3>
                 <p>Create an account and set up your parking facility in our system.</p>
               </div>
             </div>
             <div className="col-md-4 mb-4">
               <div className="step-box">
-                <div className="step-number">2</div>
+                <div  style ={{backgroundColor:" #1a73e8"}}className="step-number">2</div>
                 <h3>Customize Settings</h3>
                 <p>Set your rates, operating hours, and configure automated features.</p>
               </div>
             </div>
             <div className="col-md-4 mb-4">
               <div className="step-box">
-                <div className="step-number">3</div>
+                <div  style ={{backgroundColor:" #1a73e8"}}className="step-number">3</div>
                 <h3>Go Live</h3>
                 <p>Launch your smart parking system and start accepting reservations.</p>
               </div>
@@ -426,7 +426,7 @@ const Home = () => {
                     </div>
                   )}
                   
-                  <button  style ={{backgroundColor:"red"}} type="submit" className="btn btn-get-started  text-light d-flex justify-content-center mt-4 mx-auto fs-5"disabled={isSubmitting}>
+                  <button  style ={{backgroundColor:" #1a73e8"}} type="submit" className="btn  text-light d-flex justify-content-center mt-4 mx-auto fs-5"disabled={isSubmitting}>
                     {isSubmitting ? 'Sending...' : 'Submit'}
                   </button>
                 </div>
